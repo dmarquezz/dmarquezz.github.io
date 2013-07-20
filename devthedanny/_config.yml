@@ -1,4 +1,4 @@
 name: Dev the Danny
 pygments: true
-source: /Users/dmarquez/dev/git_hub/dmarquezz.github.io/devthedanny
-destination: /Users/dmarquez/dev/git_hub/dmarquezz.github.io/devthedanny/_site
+safe: true
+lsi: false
