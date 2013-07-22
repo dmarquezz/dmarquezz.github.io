@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog
+tagline: dev the danny's rants in one page
+header: All Posts
+group: navigation
+---
+{% include JB/setup %}
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts reversed limit:10 %}
+      <h1>{{ post.title }} <small>{{ post.tagline }}</small></h1>
+      <p>{{ post.content }}</p>
+    {% endfor %}
+  </ul>
+</div>
