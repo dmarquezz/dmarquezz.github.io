@@ -42,7 +42,7 @@ odds = evens.map { |num| num += 1 }
 #=> [3, 5, 7, 9]
 {% endhighlight %} 
 
-_select_ also iterates over each element in an array. The difference however, is that _select_ returns a new array composed of the elements "for which the given block is true." Therefore, we can solve the problem in the first example in the following way using _select_:
+_select_ also iterates over each element in an array. The difference however, is that _select_ returns a new array composed of the elements "for which the given block is true." Therefore, we can solve the problem in the second example in the following way using _select_:
 
 {% highlight ruby %}
 nums = (1..9)
