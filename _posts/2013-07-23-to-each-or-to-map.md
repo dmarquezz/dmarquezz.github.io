@@ -28,9 +28,9 @@ nums.each { |num| odds << num if num%2 != 0 }
 # now odds = [1, 3, 5, 7, 9]
 {% endhighlight %}
 
-This is a common mistake I made when learning Ruby. "But this solution works!" some, like I once did, might argue. Your argument is correct, however; Ruby offers us a more concise, better looking solution, which is a [functional programming][functionalprogramming] style of solving this sort of problem.
+This is a common mistake I made when learning Ruby. "But this solution works!" some, like I once did, might argue. Your argument is correct, however; Ruby offers us a more concise, better looking solution. These solutions are the [functional programming][functionalprogramming] style of solving this sort of problem.
 
-The solutions that I am talking about are [_map_][map] and [_select_][select]. _map_ and _select_ are both methods in Ruby's Enumerable module. Since Enumerable is mixed into several classes, we can call these methods on arrays and hashes, amongst other things.
+The solutions I'm referring to are the [_map_][map] and [_select_][select] methods. _map_ and _select_ are both methods in Ruby's Enumerable module. Since Enumerable is mixed into several classes, we can call these methods on arrays and hashes, amongst other things.
 
 _map_ iterates over an array and runs a block of code on each element of that array. When it is done iterating, it returns a _new_ array with the newly computed values. Therefore, we can solve the problem in the first example in the following way using _map_: 
 
