@@ -8,7 +8,7 @@ tags: [map, collect, select, find_all, arrays, hashes]
 ---
 {% include JB/setup %}
 
-If you're like me, you were introduced to programming through a more traditional programming language. In my case, that language was [Java][java]. In java, your options for iteration are very limited compared to a language like [Ruby][ruby]. The more common methods of iteration in Java are the _for_ and _for-each_ loops. Because these iteration methods are used so frequently in Java, Ruby beginners coming from Java tend to look for a solution that works similary in order to try to solve problems requiring some sort of iteration. A basic example of this mistake is filling an array:
+If you're like me, you were introduced to programming through a more traditional programming language. In my case, that language was [Java][java]. In java, your options for iteration are very limited compared to a language like [Ruby][ruby]. The more common methods of iteration in Java are the _for_ and _for-each_ loops. Because these iteration methods are used so frequently in Java, Ruby beginners coming from Java and Java-like languages tend to look for a solution that works similarly in order to try to solve problems requiring some sort of iteration. A basic example of this mistake is filling an array:
 
 {% highlight ruby %}
 #!/usr/bin/env ruby
@@ -40,7 +40,9 @@ _map_ iterates over an array and runs a block of code on each element of that ar
 evens = [2, 4, 6, 8]
 odds = evens.map { |num| num += 1 } 
 #=> [3, 5, 7, 9]
-{% endhighlight %} 
+{% endhighlight %}
+
+Something to note is that the the _map_ method will always return an array. This means that using map on a hash in the way I do so above will still get a new array - not a new hash. If you're looking for a solution to mapping hashes, [check out the answer to this question on SO.][so] 
 
 _select_ also iterates over each element in an array. The difference however, is that _select_ returns a new array composed of the elements "for which the given block is true." Therefore, we can solve the problem in the second example in the following way using _select_:
 
@@ -49,8 +51,6 @@ nums = (1..9)
 odds = nums.select { |num| num%2 != 0 } 
 #=> [1, 3, 5, 7, 9]
 {% endhighlight %}
-
-Something to note is that these methods will always return an array. This means that if you use these methods on a hash in the way I do so above, you will still get a new array - not a new hash. If you're looking for a solution to mapping hashes, [check out the answer to this question on SO.][so]
  
 
 [java]: http://docs.oracle.com/javase/tutorial/java/
