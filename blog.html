@@ -1,35 +1,26 @@
 ---
-layout: page
-title: Blog
-tagline: dev the danny's rants in one page
-header: All Posts
-group: navigation
+layout: default
+title: Blog Page
 ---
-{% include JB/setup %}
 
-<div id="home">
+{% for post in site.posts limit:10 %}
+  <div class='post'>
+  	<h1><a href='{{ BASE_PATH }}{{ post.url }}'>{{ post.title }}</a></h1>
+    <p>{{ post.content }}</p>
+    <p>
+  	  Published:
+  	  {{ post.date | date: '%B' }}
+  	  {{ post.date | date: '%d' }}
+  	  {{ post.date | date: '%Y' }}
+    </p>
+  </div>
+{% endfor %}
+
+<!-- <div id="home">
+  <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts limit:10 %}
-      {% if forloop.index == forloop.length %}
-          <div id="bog_post">
-      	    <!--<h1>{{ post.title }} <small>{{ post.tagline }}</small></h1>
-            <p>{{ post.content }}</p>
-          </div>-->
-      {% else %}
-          <div id="bog_post" style="border-bottom: 5px solid #2d2d2d">
-      	   <!-- <h1>{{ post.title }} <small>{{ post.tagline }}</small></h1>
-            <p>{{ post.content }}</p>
-          </div>-->
-      {% endif %}
-            <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} <small>{{ post.tagline }}</small></a></h1>
-            <p>{{ post.content }}</p>
-            <p>
-              Published:
-              <span class="month"><abbr>{{ post.date | date: '%B' }}</abbr></span>
-              <span class="day">{{ post.date | date: '%d' }}</span>
-              <span class="year">{{ post.date | date: '%Y' }}</span>
-            </p>
-        </div>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div> -->

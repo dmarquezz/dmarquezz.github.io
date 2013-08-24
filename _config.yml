@@ -1,21 +1,2 @@
+name: Dev the Danny
 pygments: true
-auto: true
-permalink: /:categories/:year/:month/:day/:title 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : Dev the Danny
-tagline: follow me on my journey
-author :
-  name : Daniel A. Marquez
-  email : marquezadaniel@gmail.com
-  github : dmarquezz
-  twitter : dmarquezzzz
-
-BASE_PATH : false
-ASSET_PATH : false
-
-archive_path: /archive.html
-categories_path : /categories.html
-tags_path : /tags.html
