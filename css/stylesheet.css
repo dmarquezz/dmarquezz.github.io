@@ -81,15 +81,15 @@ h2 > a {
 }
 
 .footer > #footerleft {
-	position: relative;
-	padding: 1em 0 0 5em;
+	margin: 1em 0 0 5em;
 	float: left;
 }
 
 .footer > #footerright {
-	padding: 7em 10em 0 0;
+	text-align: center;
+	width: 50%;
+	margin: 7em 10em 0 0;
 	float: right;
-	position: relative;
 }
 
 span {
