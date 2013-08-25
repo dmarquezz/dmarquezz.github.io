@@ -48,16 +48,14 @@ h2 > a {
 }
 
 .main {
-	margin: 10em;
-	overflow: auto;
-	float: left;
+	margin: auto;
 	padding: auto;
 }
 
 .main > p {
 	vertical-align: center;
 	text-align: center;
-	font-size: 10em;
+	font-size: 8em;
 	font-family: 'Quicksand', sans-serif;
 	color: #B2B2B2;
 }
@@ -73,10 +71,8 @@ h2 > a {
 }
 
 .footer {
-	width: 100%;
+	min-width: 101%;
 	background-color: #FF4719;
-	margin: -1em -2em 0;
-	padding-right: 5em;
 	font-family: 'Caesar Dressing', sans-serif;
 }
 
@@ -87,7 +83,7 @@ h2 > a {
 
 .footer > #footerright {
 	text-align: center;
-	width: 50%;
+	width: 40%;
 	margin: 7em 10em 0 0;
 	float: right;
 }
