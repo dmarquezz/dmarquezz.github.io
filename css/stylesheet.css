@@ -4,6 +4,8 @@
 }
 
 html, body { 
+	min-width: 960px;
+	width: 100%;
 	height: 100%;
 	background-color: #FFFFFF;
 }
@@ -12,6 +14,7 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	width: 100%;
 	margin: 0 auto -10em;
 }
 /*****************************************************************************/
@@ -22,19 +25,23 @@ html, body {
 header {
 	margin-left: auto;
 	margin-right: auto; 
+	padding: auto;
+
 	text-align: center;
+	font-family: 'Caesar Dressing', sans-serif;
+	letter-spacing: .1em;
+	text-align: center;
+
 	width: 100%;
-	height: 125px;
+	height: 20%;
+	top: 0;
+
 	background-color: #FFFFFF;
 }
 
 header > .title {
-	width: 100%;
-	font-family: 'Caesar Dressing', sans-serif;
-	font-size: 1.5em;
-	padding: auto;
-	padding-top: 1em;
-	text-align: center;
+	font-size: 1.3em;
+	padding-top: .2em;
 }
 
 a {
@@ -48,14 +55,19 @@ h2 > a {
 }
 
 .main {
-	margin: auto;
-	padding: auto;
+	margin: 3em 15em 0 15em;
+	padding-bottom: 10em;
+	position: relative;
+
+	/*margin: auto;
+	padding: auto;*/
 }
 
 .main > p {
 	vertical-align: center;
 	text-align: center;
 	font-size: 8em;
+	white-space: pre-wrap;
 	font-family: 'Quicksand', sans-serif;
 	color: #B2B2B2;
 }
@@ -66,25 +78,27 @@ h2 > a {
 /*
 /*****************************************************************************/
 .footer, .push{
-	height: 15em;
+	height: 10em;
+	min-width: 100%;
+	padding-bottom: 20px;
 	clear: both;
 }
 
 .footer {
-	min-width: 101%;
+	right: 0;
 	background-color: #FF4719;
 	font-family: 'Caesar Dressing', sans-serif;
 }
 
 .footer > #footerleft {
-	margin: 1em 0 0 5em;
+	margin-left: 5em;
 	float: left;
 }
 
 .footer > #footerright {
 	text-align: center;
 	width: 40%;
-	margin: 7em 10em 0 0;
+	margin: 5em 10em 0 0;
 	float: right;
 }
 
